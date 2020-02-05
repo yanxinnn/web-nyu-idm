@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- name of tab is Yanxin -->
+    <title>Yanxin</title>
+    <style>
+    /* start of CSS code, information not so visible on the page is here,
+    CSS is on the same page as HTML for now */
+    body {
+      /* changes background color from light blue to dark blue
+      as it gets closer to the bottom */
+      background-image: linear-gradient(#2E92C2, #09425E);
+      /* color of plain text is light purple */
+      color: #CD9BFF;
+      /* centers all the plain text */
+      text-align: center;
+      /* plain text sizes are all 32 px, a size describable to be medium */
+      font-size: 32px;
+      /* creates a thick 3D outset blue border around all plain text */
+      outline: 50px outset #1AB4FF;
+    }
+
+    .silver{
+      /* source : https://cssgradient.io/blog/css-gradient-text/
+      creates a gradient of black to white text, there is a masking sort of
+      effect going on here where the gradient is only applied to the text to make
+      the text look gradiented whilst the surrounding area is unaffected */
+      background: -webkit-linear-gradient(right, #FFFFFF 40%, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* font size is 2em, which means it scales the text to 2x it's original size */
+      font-size: 2em;
+      /* this creates two lines around the text, one above and one below */
+      text-decoration: overline underline;
+      /* the underline decorations are given a dotted style */
+      text-decoration-style: dotted;
+      /* the underline decorations are given a hot pink color */
+      text-decoration-color: #DB414F;
+    }
+
+    .green{
+      /* changes text to a forest green color */
+      color: #23BF87;
+      /* rotates text to the right by 25 degrees, giving it a slated look */
+      transform: rotate(25deg);
+      /* this creates a shadow under the text, in this scenario, a dark green shadow
+      is created 5 pixels to the right and 8 pixels under the text, arguments are
+      correspondingly x value, y value, and color code */
+      text-shadow: 5px 8px #366D4A;
+      /* font size of text is 1.5x their original text size */
+      font-size: 1.5em;
+    }
+
+    h1{
+      /* all h1 classed items will be in the verdana font */
+      font-family: verdana;
+    }
+
+    /* when h2 classed items are hovered over with the mouse, they will follow
+    these rules */
+    h2:hover{
+      /* all h2 classed items will have size 100px font, which is bigger than the plain
+      text size when hovered over */
+      font-size: 100px;
+      /* all h2 classed items will have it's letter changed to uppercase when hovered over */
+      text-transform: uppercase;
+    }
+
+    h3:hover{
+      /* when h3 classed items are hovered over, they will be rotated to the left 10 degrees */
+      transform: rotate(-10deg);
+    }
+
+    u{
+      /* u tagged items are given 2 underlines */
+      text-decoration-style: double;
+      /* u tagged items have a shadow effect with arguments of 8 px to the left,
+      8 px to the right, and a color of black */
+      text-shadow: -8px 8px black;
+    }
+
+    .wavy{
+      /* wavy tagged items have two lines surrounding them, one above the text and one below the text
+      (source:https://www.w3schools.com/cssref/pr_text_text-decoration.asp) */
+      text-decoration-line: overline underline;
+      /* the wavy tagged items have a wavy styled underline */
+      text-decoration-style: wavy;
+      /* wavy tagged items have an underline color of light yellow */
+      text-decoration-color: #FFFD9A;
+      /* wavy tagged items are italicized */
+      font-style: italic;
+    }
+
+    .arms{
+      /* text tagged with "arms" are colored an fleshy orangish color */
+      color: #E8A980;
+      /* arms tagged words are underlined */
+      text-decoration: underline;
+      /* arms tagged words have a decoration color of the same fleshy orangish color as the words */
+      text-decoration-color: #E8A980;
+    }
+
+    .arms:hover{
+      /* when the arms tagged words are hovered over, they are colored white */
+      color: white;
+      /* the underline of the arms tagged word is also colored white when hovered over*/
+      text-decoration-color: white;
+      /* the font size of the arms tagged words when hovered over is multiplied by 2 */
+      font-size: 2em;
+    }
+
+  /* this marks the end of the CSS code*/
+
+    </style>
+  </head>
+<!-- this is where the HTML code goes, a good rule of thumb when distinguishing
+HTML vs. CSS code is that HTML has < > while CSS has { } -->
+  <body>
+    <h3>
+      <!-- text here is given a the hover properties of rotating to the left 10 degrees -->
+      So
+    </h3>
+    <!-- text here is given the font arial black and is changed to an orangish color,
+    when the text is hovered, the text is enlarged and letters are uppercased to stress their importance,
+    for the future, it is a bad habit to give css code in html because it gets hard to organize
+    and manage as the code gets more complicated -->
+    <h2 style="font-family:arial black; color:#EEAB71;">
+      <div class="wavy">
+        <!-- text here is given the wavy class attributes, 2 yellow wavy underlines above and below text
+        while the text itself is also italicized to emphasize it -->
+        hold me,
+      </div>
+    </h2>
+    <!-- h3 classed items are given a slight tilt to the left when hovered over, text here
+    is changed to the georgia font and given a bright pink color to convey an elegant feminine
+    vibe for the word mom, again, noting not to put this kind of code in HTML -->
+    <h3 style="font-family:georgia; color:#FF518D;">
+      Mom,
+    </h3>
+    <!-- skips a line for readability -->
+    <br>
+    <!-- skips a line for readability once again -->
+    <br>
+    <!-- h3 classed items lean towards the left by 10 degrees when hovered over -->
+    <h3>
+      In your
+    </h3>
+    <!-- h2 classed items when hovered over will have a larger font size and its letters will be uppercased, the
+    misplaced html directions here make the font arial, the size 2x bigger than the original text,
+    gives it a pastel green color, and a oblique style meaning that it slants to the right like italic but
+    keeps it glyph properties (source: https://www.w3schools.com/cssref/pr_font_font-style.asp) -->
+    <h2 style="font-size:200%; color:#A9EBC1; font-style: oblique; font-family:arial">
+      <u>
+        <!-- u class properties take effect here, has two underlines above and below and give and given a black shadow,
+        the &nbsp here is used so a space is reserved to create the lengthening of the word effect
+        (source: https://www.w3schools.com/html/html_entities.asp) -->
+        l &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp o &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp n &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp g
+      </u>
+    </h2>
+    <h3>
+      <!-- h3 class items tilt to the left 10 degrees -->
+      arms
+    </h3>
+    <!-- skipping a line for readability -->
+    <br>
+    <!-- another line skipped for readability -->
+    <br>
+    <h3>
+      <!-- h3 class items have a 10 degree left tilt -->
+      Your
+      <div class="silver">
+        <!-- silver class items are 2x bigger in size, have two hot pink colored dotted lines
+        above and below the text, and its text has a black to white gradient going right -->
+        petrochemical
+      </div>
+        arms
+    </h3>
+    <!-- line break here -->
+    <br>
+    <!-- text here have a verdana font, incorrect placement of html code that tilts the
+    text to the left and the text casts a dark purple shadow -->
+    <h1 style="transform: rotate(-15deg); text-shadow: 8px 8px #7840BD;">
+      Your
+      <!-- green class text have a forest green color and a 25 degree tilt to the right,
+      1.5x bigger than original text and also has a dark green shadow casted to the text's bottom right -->
+      <div class="green">
+        <br>
+        military
+      </div>
+      <!-- a line break here -->
+      <br>
+      <!-- a link to the next website in the webring -->
+      <a href="https://katrinamber.github.io/web-nyu-idm/here-come-the-planes">
+        <!-- arms class items have an orangish color with a same colored underline,
+        upon hover, word and underline turn white and double in size -->
+        <div class="arms">
+          arms
+        </div>
+      </a>
+      <!-- last line break to not look too condensed near the bottom-->
+      <br>
+    </h1>
+  </body>
+</html>
+<!-- end of the HTML code, also the end of the code in general! -->
