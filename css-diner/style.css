@@ -1,5 +1,4 @@
-
-/* This is default helpul CSS to include - dont edit this part unless... you want to */
+/* Just don't touch this! */
 html,
 body {
   margin: 0;
@@ -9,30 +8,83 @@ body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* THE END of default helpful basic CSS to include. EDIT the stuff BELOW this line*/
-
-@font-face {
-  font-family: 'violet';
-  src: url('./fonts/VioletSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+/* start writing your own code below this */
 
 body {
-  background-color: violet;
-  color: yellow;
+  background-color: lightblue;
   text-align: center;
   font-size: 2em;
 }
 
-.my-fun-class {
-  width: 40%;
-  border: 2px solid forestgreen;
-  display: block;
-  margin: auto;
+/* LEVEL 3: ID Selector. Selects all elements with a certain ID. In my code,
+this is applying the font and color changing attributes to the sentence classified as
+part of the #title ID. ID's are identified by the hashes in front of them in CSS. */
+#title {
+  font-family: 'Akronim', cursive;
+  color: green;
 }
 
-img {
-  width: 40%;
-  padding: 2em;
+/* LEVEL 6: Class Selector. Selects all elements of a certain class. Classes differ
+from ID's as elements can only have one ID but many classes. In my code, all elements
+of the .underline class are underlined and have a different font. All elements in the border
+class are grouped together by a thick, solid border. Classes are identified by the periods in
+front of them in CSS. */
+.underline {
+  font-family: 'Satisfy', cursive;
+  color: blue;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: black;
+  font-size: 35px;
+}
+
+.border {
+  border-style: solid;
+  border-width: thick;
+  border-radius: 5px;
+  width: 600px;
+  display: inline-block;
+}
+
+/* LEVEL 11: Combine the Universal Selector. Selects all elements within a certain
+element. In my code, all elements that ul tagged and in other elements are given
+a different bold font. The other ul items with no inner elements are uneffected by
+these attributes as they do not have inner elements. Universal selectors are identified
+by asterisks following the element type. */
+
+ul *{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+/* LEVEL 18: Nth Child Pseudo-selector. Selects a specfic element within another element
+by its order. In my code, the third h3 tag will be a bigger and different colored
+font with an additional wavy underline and double border. */
+h3:nth-child(3) {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: indigo;
+  color: brown;
+  font-size: 1.8em;
+  border-style: double;
+  border-width: thick;
+  display: inline-block;
+  width: 200px;
+}
+
+/* LEVEL 24: Last of Type Selector. This selects the last element of a specific
+type. In my code, the last h3 tagged items of the underline class will have a pink color.
+The other h3 tags throughout the rest of the code not within the underline class will not
+have these attributes. In the border class, the last ul tagged will be in a green color
+with an overline. */
+.underline h3:last-of-type{
+  color: #FF8FF0;
+}
+
+.border ul:last-of-type{
+  color:green;
+  size: 2em;
+  text-decoration: overline;
+  text-decoration-style: dotted;
 }
