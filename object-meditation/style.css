@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: black;
+  font-family: 'Pangolin', regular;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+}
+
+ul:hover {
+  font-size: 40px;
+  color:white;
+}
+
+.script{
+  font-family: 'Parisienne', regular;
+  color: #D69B7D;
+  font-size: 50px;
+}
+
+.title{
+  margin: 40px 100px;
+  text-shadow: 2px 2px gray;
+}
+
+.cross-out{
+  text-decoration: line-through;
+  text-decoration-color:red;
+}
+
+.words{
+  margin: 10px 120px;
+}
+
+.page-7{
+  margin: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
