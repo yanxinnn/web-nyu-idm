@@ -11,15 +11,25 @@ body {
 body {
   background: black;
   font-family: 'Pangolin', regular;
-  background-color: lightblue;
-  color: black;
+  background-color: #FFC9D0;
+  color: white;
   text-align: center;
   font-size: 35px;
 }
 
-ul:hover {
-  font-size: 40px;
-  color:white;
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .script{
@@ -28,22 +38,140 @@ ul:hover {
   font-size: 50px;
 }
 
-.title{
-  margin: 40px 100px;
-  text-shadow: 2px 2px gray;
-}
-
 .cross-out{
   text-decoration: line-through;
-  text-decoration-color:red;
+  text-decoration-color: gray;
+}
+
+.shadowed{
+  text-shadow: 5px, 2px, green;
 }
 
 .words{
-  margin: 10px 120px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #1B0019;
 }
 
-.page-7{
-  margin: 55px;
+.tab1{
+  margin-left: 70px;
+}
+
+.tab2{
+  margin-left:150px;
+}
+
+.tab3{
+  margin-left:230px;
+}
+
+.tab4{
+  margin-left: 310px;
+}
+
+.tab5{
+  margin-left: 500px;
+}
+
+.tab6{
+  margin-left: 650px;
+}
+
+.tab7{
+  margin-left: 780px;
+}
+
+.tab8{
+  margin-left: 920px;
+}
+
+.tab9{
+  margin-left: 980px;
+}
+
+.tab10{
+  margin-left: 1100px;
+}
+
+.tab11{
+  margin-left:1300px;
+}
+
+.tab12{
+  margin-left: 1400px;
+}
+
+.tab13{
+  margin-left: 1520px;
+}
+
+.tab14{
+  margin-left: 1800px;
+}
+
+.tab15{
+  margin-left: 1900px;
+}
+
+.tab16{
+  margin-left: 2200px;
+}
+
+.tab17{
+  margin-left: 2400px;
+}
+
+.level1{
+  margin-top: 920px;
+  margin-bottom: 0px;
+}
+
+.level2{
+  margin-top: -110px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+}
+
+.title{
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: white;
+}
+
+.page6{
+  color: #1B0019;
+  margin-right: -600px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 200px;
+}
+
+.page7{
+  color: #1B0019;
+  margin-right: -1800px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 200px;
+}
+
+.small{
+  font-size: 24px;
+  margin: 5px;
+  margin-bottom: 60px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: gray;
+}
+
+h1{
+  text-shadow: 6px 4px gray;
 }
 
 @media only screen and (max-width: 600px) {
