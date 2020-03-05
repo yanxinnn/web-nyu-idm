@@ -134,9 +134,21 @@ body {
   margin-right: 50px;
 }
 
-.title{
-  margin-bottom: 0px;
+.title2{
+  margin-bottom: 80px;
   margin-top: 5px;
+  color: white;
+}
+
+.title3{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.title4{
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: white;
 }
 
@@ -174,8 +186,127 @@ h1{
   text-shadow: 6px 4px gray;
 }
 
-@media only screen and (max-width: 600px) {
+img.resize{
+  max-width:15%;
+  max-height:15%;
+}
+
+.button{ /* reference: https://fdossena.com/?p=html5cool/buttons/i.frag */
+  background-color: #F7F7F2;
+  border
+  color: white;
+  padding: 0px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  border-radius: 25px;
+  height: 70px;
+  width: 180px;
+  font-family: 'Pangolin', regular;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  position:relative;
+  margin-bottom: 20px;
+}
+
+#clockwise { /* reference: https://codepen.io/vitoralberto/pen/OPYyYB */
+		-webkit-animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+
+@media only screen and (max-width: 1300px){
+  body{
+    font-size: 22px;
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+  .title2{
+    margin-bottom: 50px;
+  }
+  h1{
+    text-shadow: 4px 4px gray;
+  }
+  .small{
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .words{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .tab3{
+    margin-left:350px;
+  }
+
+  .tab4{
+    margin-left:400px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  body{
+    font-size: 17px;
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+  .title2{
+    margin-bottom: 40px;
+  }
+  h1{
+    text-shadow: 3px 4px gray;
+  }
+  .small{
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .tab3{
+    margin-left:250px;
+  }
+
+  .tab4{
+    margin-left:300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   body {
-    background-color: lightblue;
+    font-size: 15px;
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+  .button{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    border-radius: 14px;
+  }
+  h1{
+    text-shadow: 4px 3px gray;
+  }
+  .title2{
+    margin-bottom: 30px;
+  }
+  .small{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .tab3{
+    margin-left: 200px;
+  }
+
+  .tab4{
+    margin-left: 250px;
   }
 }
