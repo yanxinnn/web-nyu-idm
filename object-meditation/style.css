@@ -49,7 +49,7 @@ body {
 
 .words{
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: -800px;
   margin-left: 200px;
   margin-right: 200px;
   color: #1B0019;
@@ -152,15 +152,15 @@ body {
   color: white;
 }
 
-.page6{
+.page5{
   color: #1B0019;
   margin-right: -600px;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 80px;
   margin-left: 200px;
 }
 
-.page7{
+.page6{
   color: #1B0019;
   margin-right: -1800px;
   margin-top: 60px;
@@ -186,9 +186,22 @@ h1{
   text-shadow: 6px 4px gray;
 }
 
-img.resize{
-  max-width:15%;
-  max-height:15%;
+img.resizeArrow{
+  max-width: 15%;
+  max-height: 15%;
+  position: relative;
+  align-items: center;
+  top: -400px;
+  left: 0px;
+  margin-bottom: -180px;
+}
+
+img.resizeBottle{
+  max-width: 10%;
+  max-height: 10%;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 .button{ /* reference: https://fdossena.com/?p=html5cool/buttons/i.frag */
@@ -207,18 +220,54 @@ img.resize{
   box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
   position:relative;
   margin-bottom: 20px;
+  margin-top: -200px;
 }
 
-#clockwise { /* reference: https://codepen.io/vitoralberto/pen/OPYyYB */
-		-webkit-animation: rotation 4s infinite linear;
+.shoe{
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+  left: 500px;
+  top: -100px;
+}
+
+.bigArrow{
+  max-width: 8%;
+  max-height: 8%;
+  position:relative;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+}
+
+.rightArrow{
+  max-width: 8%;
+  max-height: 8%;
+  position:relative;
+  left: 100px;
+}
+
+.drop{
+  max-width: 7%;
+  max-height: 7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  left: 30px;
+}
+
+.page7:hover{
+  color: red;
+  font-size: 1.2em;
 }
 
 @-webkit-keyframes rotation {
 		from {
-				-webkit-transform: rotate(0deg);
+				-webkit-transform: rotate(359deg);
 		}
 		to {
-				-webkit-transform: rotate(359deg);
+				-webkit-transform: rotate(0deg);
 		}
 }
 
@@ -251,7 +300,37 @@ img.resize{
   .tab4{
     margin-left:400px;
   }
-}
+
+  img.resizeArrow{
+    top: -360px;
+    margin-bottom: -180px;
+  }
+  .shoe{
+    max-width: 25%;
+    max-height: 25%;
+    left: 280px;
+    top: 200px;
+  }
+  .page5{
+    margin-right: -600px;
+    margin-top: 1200px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+  }
+  .bigArrow{
+    top: -90px;
+  }
+  .rightArrow{
+  left: 20px;
+  max-width: 6%;
+  max-height: 6%;
+  }
+  .drop{
+    left: 240px;
+    margin-bottom: -50px;
+    max-width: 7%;
+    max-height: 7%;
+  }
 
 @media only screen and (max-width: 900px){
   body{
@@ -277,7 +356,38 @@ img.resize{
   .tab4{
     margin-left:300px;
   }
+  img.resizeArrow{
+    top: -260px;
+    margin-bottom: -120px;
+  }
+  .shoe{
+    max-width: 22%;
+    max-height: 22%;
+    left: 220px;
+    top: 400px;
+  }
+  .page5{
+    margin-right: -750px;
+    margin-top: 1250px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+  }
+  .bigArrow{
+    top: -50px;
+  }
+  .rightArrow{
+    left: 10px;
+    max-width: 5%;
+    max-height: 5%;
+  }
+  .drop{
+    left: 180px;
+    margin-bottom: -50px;
+    max-width: 7%;
+    max-height: 7%;
+  }
 }
+
 
 @media only screen and (max-width: 700px) {
   body {
@@ -308,5 +418,34 @@ img.resize{
 
   .tab4{
     margin-left: 250px;
+  }
+  img.resizeArrow{
+    top: -220px;
+    margin-bottom: -100px;
+  }
+  .shoe{
+    max-width: 21%;
+    max-height: 21%;
+    left: 220px;
+    top: 440px;
+  }
+  .page5{
+    margin-right: -720px;
+    margin-top: 1250px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+  }
+  .bigArrow{
+    top: -50px;
+    left: 10px;
+  }
+  .rightArrow{
+    left: -50px;
+    max-width: 4%;
+    max-height: 4%;
+  }
+  .drop{
+    left: 180px;
+    margin-bottom: -50px;
   }
 }
