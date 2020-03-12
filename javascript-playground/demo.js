@@ -19,7 +19,7 @@ console.log(randomName); // gives a random name in namesArray
 let arrayAsString = namesArray.join(", ");
 console.log(arrayAsString);
 
-$("#names").html(namesArray[n]);
+$("#names").html(namesArray[0]);
 
 $("#names").html(arrayAsString);
 

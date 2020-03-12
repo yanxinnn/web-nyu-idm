@@ -9,11 +9,21 @@ let myAlphabet = ['A', 'B', 'C', 'D','E','F','G'];
 // function myAlphabetLength(){
 //   console.log(myAlphabet.length);
 // }
+
 // myAlphabetLength();
 
 // 3. Within the function also use an if-conditional statement that checks if the number of items within the array are less than 4
 // push your edits to github!!
-
+// function myAlphabetLength(){
+//   console.log(myAlphabet.length);
+//   if (myAlphabet.length < 4){
+//     console.log("less than 4");
+//   } else{
+//     console.log("not less than 4");
+//   }
+// }
+//
+// myAlphabetLength();
 
 
 
