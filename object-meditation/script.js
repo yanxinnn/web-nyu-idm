@@ -3,27 +3,31 @@ $(document).ready(function(){
   var count = 0;
   var filled = false;
   var hiddenWords = false;
-  console.log(timer);
+  var page2 = false;
+  //console.log(timer);
 
   if (timer == false){
     // spins the arrow
     $("button").click(function(){
-      console.log("clicked");
+      //console.log("clicked");
       $("#counterclock").css({
         "-webkit-animation": "rotation 2s infinite linear"
       });
       timer = true;
-      console.log(timer);
+      page2 = true;
+      //console.log(timer);
     });
   }
 
   setInterval(function() {
-    if (timer == true){
-        count += 1;
-        console.log(count/60);
+    if (timer == true && page2 == true){
+      count += 1;
+      //console.log(count/60);
       }
-    if (count >= 60){ // reference: https://stackoverflow.com/questions/6321000/how-can-i-go-to-a-new-page-from-within-javascript
-      window.location = "page2.html";
+    if (count >= 60 && page2 == true){ // reference: https://stackoverflow.com/questions/6321000/how-can-i-go-to-a-new-page-from-within-javascript
+      window.location.href = "page2.html";
+      console.log("turning");
+      page2 = false;
     }
   });
 
@@ -65,4 +69,28 @@ $(document).ready(function(){
     }
   });
 
+  function signUp() {
+    page2 = false;
+    var name = document.getElementById("input_name").value;
+    console.log(name);
+    if (name == '') {
+      window.location.reload();
+    } else{
+      window.location.href = "page3.html";
+    }
+  }
+
 });
+
+function signUp(){
+  page2 = false;
+  var name = document.getElementById("input_name").value;
+  console.log(name);
+  if (name == '') {
+    console.log('reloaded');
+    window.location.reload();
+  } else{
+    console.log('next page');
+    window.location.href = "page3.html";
+  }
+}

@@ -17,6 +17,13 @@ body {
   font-size: 35px;
 }
 
+.pg6{
+  background-image: url('images/finish.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom;
+}
+
 .center{
   display: flex;
   justify-content: center;
@@ -220,6 +227,12 @@ img.resizeBottle{
   left: 0px;
 }
 
+img.laces{
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: -350px;
+}
+
 .button{ /* reference: https://fdossena.com/?p=html5cool/buttons/i.frag */
   background-color: #F7F7F2;
   border
@@ -271,6 +284,10 @@ img.resizeBottle{
   left: 100px;
 }
 
+.directions{
+  color: gray;
+}
+
 .drop{
   max-width: 7%;
   max-height: 7%;
@@ -304,15 +321,21 @@ img.resizeBottle{
   animation-timing-function: linear;
 }
 
-.wiggle{
-  animation: wiggle 4s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
+input{ /* reference https://www.w3schools.com/css/css_form.asp */
+  background-image: url('images/x.png');
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+  background-size: 15% 100%;
+  color: red;
+  padding-left: 7%;
+  width: 25%;
+  height: 6%;
+  font-size: 80%;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: inherit;
+  outline: none;
+  font-family: 'Pangolin', regular;
 }
 
 @keyframes pulse {
@@ -397,6 +420,20 @@ img.resizeBottle{
     max-width: 7%;
     max-height: 7%;
   }
+  .laces{
+    position: relative;
+    top: 50px;
+    max-width: 21%;
+    max-height: 21%;
+  }
+  input{
+    background-position: 3% 50%;
+    background-size: 15% 100%;
+    color: red;
+    padding-left: 3%;
+    width: 10%;
+    height: 6%;
+  }
 
 @media only screen and (max-width: 900px){
   body{
@@ -451,6 +488,19 @@ img.resizeBottle{
     margin-bottom: -50px;
     max-width: 7%;
     max-height: 7%;
+  }
+  .laces{
+    position: relative;
+    top: 120px;
+    max-width: 20%;
+    max-height: 20%;
+  }
+  input{
+    background-position: 3% 50%;
+    background-size: 15% 100%;
+    padding-left: 3%;
+    width: 10%;
+    height: 5%;
   }
 }
 
@@ -513,5 +563,19 @@ img.resizeBottle{
   .drop{
     left: 180px;
     margin-bottom: -50px;
+  }
+  .laces{
+    position: relative;
+    top: 120px;
+    max-width: 20%;
+    max-height: 20%;
+  }
+  input{
+    padding-left: 3%;
+    width: 10%;
+    height: 3%;
+  }
+  .pg6{
+    background-size: 40%;
   }
 }
