@@ -13,14 +13,24 @@ function getRandom(max){
 
 let n = getRandom(namesArray.length);
 let randomName = namesArray[n];
-console.log(namesArray.length);
-console.log(randomName); // gives a random name in namesArray
+// console.log(namesArray.length);
+// console.log(randomName); // gives a random name in namesArray
 
-let arrayAsString = namesArray.join(", ");
-console.log(arrayAsString);
+// let arrayAsString = namesArray.join(", ");
+// console.log(arrayAsString);
 
-$("#names").html(namesArray[0]);
+let sortedNames = namesArray.sort();
 
-$("#names").html(arrayAsString);
+// let text = "";
+//
+// for (i = 0; i < namesArray.length; i++){
+//   text += namesArray[i] + "<br>";
+// }
+
+// $("#names").html(text);
+
+// $("#names").html(namesArray[0]);
+
+// $("#names").html(arrayAsString);
 
 //$("#names").html(namesArray);
